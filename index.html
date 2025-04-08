@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Online Pizza Ordering System</title>
+    </head>
+
+    <body>
+        <h1>Pizza Galore</h1>
+        <form class="pizza-customization">
+
+            <div class="pizza-size">
+                <h3>Pizza Size:</h3>
+                <label><input type="radio" name="size" value="S">Small - <b>R30</b></label>
+                <label><input type="radio" name="size" value="M">Medium - <b>R75</b></label>
+                <label><input type="radio" name="size" value="L">Large - <b>R150</b></label>
+            </div>
+              
+                <h3>Toppings:</h3>
+                <label><input type="checkbox" name="topping" value="P">Pepperoni - <b>R2</b></label>
+                <label><input type="checkbox" name="topping" value="M">Mushrooms - <b>R5.5</b></label>
+                <label><input type="checkbox" name="topping" value="O">Olives - <b>R7</b></label><br>
+                <label><input type="checkbox" name="topping" value="B">Bacon - <b>R10.5</b></label>
+                <label><input type="checkbox" name="topping" value="PA">Pineapples - <b>R3.75</b></label>
+                <label><input type="checkbox" name="topping" value="H">Ham - <b>R15</b></label><br>
+                <label><input type="checkbox" name="topping" value="S">BBQ Sauce - <b>R10</b></label><br><br>
+
+                <!--Div tag for current price-->
+                <div id="currentPrice">Current Price: R0:00</div>
+
+                <div class="button-container">
+                    <button type="button" id="placeOrder">Place Order</button>
+                    <button type="button" id="viewCart">View Cart</button>
+                    <button type="button" id="clearCart">Clear Cart</button>
+                </div>
+                
+                <div class="orderSummary">
+                    <p id="orderSummaryText">Your cart is empty</p>
+                    <div id="cartContents"></div>
+                </div>
+        </form>
+    </body>
+
+    <script src="script.js"></script>
+</html>
