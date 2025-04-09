@@ -39,15 +39,22 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCurrentPrice();
 
     function updateCurrentPrice() {
-        const size = document.querySelector('input[name="size"]:checked').value;
+        const sizeInput = document.querySelector('input[name="size"]:checked');
+        if (!sizeInput) {
+            currentPriceDisplay.textContent = `Current Price: R0.00`;
+            return; // Exit if no size is selected
+        }
+    
+        const size = sizeInput.value;
         let total = prices.sizes[size];
-        
+    
         document.querySelectorAll('input[name="topping"]:checked').forEach(input => {
             total += prices.toppings[input.value];
         });
-        
+    
         currentPriceDisplay.textContent = `Current Price: R${total.toFixed(2)}`;
     }
+    
 
     function addToCart() {
         const size = document.querySelector('input[name="size"]:checked').value;
