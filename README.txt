@@ -1,7 +1,7 @@
 Name: A Dlamini
 Student Number: 22363064
 
-![Student Card Image](images/WhatsApp Image 2025-04-08 at 12.14.40_db229594.jpg)
+![Student Card Image](images/studentCardImg.jpg)
 
 BRIEF DESCRIPTION
 This is an online pizza ordering system that allows users to select the size of the pizza they want 

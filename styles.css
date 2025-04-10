@@ -2,21 +2,28 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #4b2e2e;
 }
 
 label {
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
+    color: #4b2e2e;
 }
 
 h3{
     font-family: 'Arial Narrow', Arial, sans-serif;
+    color: #4b2e2e;
 }
 
 button{
     width: 150px;
     height: 50px;
     font-size: 16px;
+    color: #4b2e2e;
+    background-color: khaki;
+    border: none;
+    border-radius: 5px;
 }
 
 .pizza-customization {
@@ -30,6 +37,7 @@ button{
 
 h1{
     text-align: center;
+    color: #4b2e2e;
 }
 
 .button-container{
@@ -37,4 +45,8 @@ h1{
     justify-content: center;
     gap: 15px;
     margin-top: 20px;
+}
+
+form{
+    background-color: lightgoldenrodyellow;
 }
